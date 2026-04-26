@@ -1,0 +1,225 @@
+    /* ======NAVBAR CSS====== */
+
+ .btn1 {
+
+   height: 45px;
+   width: 45px;
+   text-align: center;
+   transition: left 0.4s ease;
+   z-index: 10;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .btn1 span {
+   color: brown;
+   font-size: 28px;
+   line-height: 45px;
+   display: inline-block;
+   transition: transform 0.4s ease, color 0.4s ease;
+ }
+
+ .btn1.click span {
+   transform: rotate(180deg);
+ }
+
+ .btn1.click span::before {
+   content: '\f00d';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+ }
+
+ .btn1.click span::before {
+   content: '\f00d';
+ }
+
+ .navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 25px;
+   height: 70px;
+   background-color: white;
+   backdrop-filter: blur(10px);
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   box-shadow: 0 4px 12px rgba(200, 134, 134, 0.2);
+ }
+
+ .nav-left {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+
+ .logo {
+   font-size: 1.8rem;
+   font-weight: bold;
+   color: brown;
+ }
+
+ .nav-icons {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   font-size: 1.2rem;
+   margin-right: 30px;
+ }
+
+ .nav-icons a {
+   color: brown;
+ }
+
+ .nav-icons a:hover {
+   color: hsl(2, 54%, 82%);
+ }
+
+   
+ 
+/* =====SIDEBAR CSS===== */
+
+ .sidebar {
+   position: fixed;
+  top: 70px;
+  left: -290px;
+  width: 290px;
+    height: calc(100% - 70px);
+  background-color: #fff;
+  transition: left 0.4s ease;
+  z-index: 999;
+  overflow-y: auto;
+ }
+
+ .sidebar.show {
+   left: 0;
+ }
+
+ /* Sidebar Menu Items */ 
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  line-height: 45px;
+  border-bottom: 1px solid brown;
+}
+
+.sidebar  ul li a {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: brown;
+  border-left: 3px solid brown;
+  position: relative;
+  transition: background 0.3s ease, border-left-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: hsl(2, 54%, 82%);
+  border-left-color: brown;
+}
+
+.sidebar ul li.active a {
+  background-color: #fff;
+  border-left-color: brown;
+  color: brown;
+}
+
+/* Dropdown */
+.sidebar ul ul {
+  display: none;
+}
+
+.sidebar ul .aba-show.show,
+.sidebar ul .hij-show.show1,
+.sidebar ul .nam-show.show2,
+.sidebar ul .cna-show.show3,
+.sidebar ul .acc-show.show4 {
+  display: block;
+}
+
+.sidebar ul ul li {
+  line-height: 32px;
+  border-bottom: none;
+}
+
+.sidebar ul ul li a {
+  font-size: 14px;
+  padding-left: 40px;
+  color: brown;
+}
+
+.sidebar ul ul li a:hover {
+  background-color: hsl(2, 54%, 82%);
+  color: brown;
+}
+
+/* Dropdown arrow */
+.sidebar ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: transform 0.4s ease;
+}
+
+.sidebar ul li a span.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/* add to card css */
+    body{ 
+        background:#f9f9f9; 
+        font-family:Arial, sans-serif;
+        margin-bottom: 50px;
+    }
+    .list-item { 
+        display:flex; 
+        align-items:center; 
+        gap:12px; padding:12px; 
+        background:white; 
+        border-radius:10px; 
+        margin-bottom:10px; 
+    }
+    .item-img { 
+        width:80px; 
+        height:80px; 
+        object-fit:cover; 
+        border-radius:8px; 
+    }
+    .qty-controls button { 
+        width:28px; 
+        height:28px; 
+        border-radius:6px; 
+        border:none; 
+        background:#ddd;
+        cursor:pointer;
+     }
+    .payment-method {
+         cursor:pointer; 
+        }
+    .invalid {
+         border-color: #dc3545 !important; 
+
+        }
+    .btn01{
+        background-color: brown;
+        color: white;
+        border: brown solid 2px;
+        border-radius: 5px;
+    }   
+    .container h2{
+        text-align: center;
+        margin-top: 15px;
+        font-size: 50px;
+        font-weight: bold;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    } 

@@ -1,0 +1,41 @@
+body {
+      background: linear-gradient(135deg, #d8d2d2 ,#fddada);
+      font-family: 'Poppins', sans-serif;
+    }
+    .register-box {
+      max-width: 400px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 35px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .register-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    .form-control {
+      border-radius: 10px;
+    }
+    button {
+      border-radius: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: none;
+    }
+    button:hover {
+      background: rgb(172, 115, 115);
+    }
+    .btn10{
+      background-color: brown;
+      color: white;
+    }
+    .name{
+      text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-bottom: 30px;
+   margin-top: 20px;
+   font-size: 45px;
+   font-weight: 600;
+    }

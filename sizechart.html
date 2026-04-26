@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIJAB BLOOM - SIZE GUIDE</title>
+    <link rel="icon" type="image/jpg" href="images/hijab bloom pic.jpg">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/sixechart.css">
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="btn1">
+                <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo">HIJAB <span style="color: black;">BLOOM</span></div>
+        </div>
+
+
+        <div class="nav-icons">
+            <a href="https://www.instagram.com/hijabbloomby_laiba?igsh=MW85MzFvbm1jbDAwZg==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="cart.html" class="cart-icon" style="position: relative;">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count"
+                    style="position:absolute; top:-8px; right:-12px; background:red; color:white; font-size:12px; padding:2px 6px; border-radius:50%; display:none;">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- sidebar  -->
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="#" class="aba-btn"><b>ABAYAS</b><span class="fas fa-caret-down first"></span></a>
+                <ul class="aba-show">
+                    <li><a href="abayas.html">ALL</a></li>
+                    <li><a href="jilbab.html">JILBAB</a></li>
+                    <li><a href="moestyabaya.html">MODESTY ABAYAS</a></li>
+                    <li><a href="simpleabaya.html">SIMPLE ABAYAS</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="hij-btn"><b>HIJABS</b> <span class="fas fa-caret-down second"></span></a>
+                <ul class="hij-show">
+                    <li><a href="hijabs.html">ALL</a></li>
+                    <li><a href="printedHijab.html">PRINTED HIJAB</a></li>
+                    <li><a href="plainHijab.html">PLAN HIJAB</a></li>
+                    <li><a href="readyToWear.html">READY TO WEAR HIJAB</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nam-btn"><b>CHADARS</b><span class="fas fa-caret-down third"></span></a>
+                <ul class="nam-show">
+                    <li><a href="chadar.html">ALL</a></li>
+                    <li><a href="iraniChadar.html">IRANI CHADAR</a></li>
+                    <li><a href="simplechadar.html">SIMPLE CHADAR</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="cna-btn"><b>CAPS,SLEEVES & NAQABS</b> <span
+                        class="fas fa-caret-down fourth"></span></a>
+                <ul class="cna-show">
+                    <li><a href="cap&naqabs.html">ALL</a></li>
+                    <li><a href="caps.html">CAPS</a></li>
+                    <li><a href="sleeves.html">SLEEVES</a></li>
+                    <li><a href="naqab.html">NAQABS</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="acc-btn"><b>ACCESSORIES</b> <span class="fas fa-caret-down fifth"></span></a>
+                <ul class="acc-show">
+                    <li><a href="accessories.html">ALL</a></li>
+                    <li><a href="pins.html">PINS</a></li>
+                    <li><a href="scrunchies.html">SCURNCHIES</a></li>
+                </ul>
+            </li>
+            <li><a href="giftboxes.html"><b>GIFT BOXS</b></a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- size chart section -->
+    <div class="size-guide">
+        <h2>Size Guide</h2>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showGuide('hijab')">Hijab Sizes</div>
+            <div class="tab" onclick="showGuide('abaya')">Abaya Sizes</div>
+        </div>
+
+        <!-- Hijab Table -->
+        <div id="hijab" class="guide">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hijab Type</th>
+                        <th>Size (inches)</th>
+                        <th>Size (cm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="type">Square Hijab</td>
+                        <td>45" × 45"</td>
+                        <td>114 × 114 cm</td>
+                    </tr>
+                    <tr>
+                        <td class="type">Rectangle Hijab (Medium)</td>
+                        <td>70" × 28"</td>
+                        <td>180 × 70 cm</td>
+                    </tr>
+                    <tr>
+                        <td class="type">Rectangle Hijab (Large)</td>
+                        <td>78" × 30"</td>
+                        <td>200 × 75 cm</td>
+                    </tr>
+                    <tr>
+                        <td class="type">Shawl</td>
+                        <td>75" × 27"</td>
+                        <td>190 × 68 cm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Abaya Table -->
+        <div id="abaya" class="guide" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Abaya Size</th>
+                        <th>Length (inches)</th>
+                        <th>Length (cm)</th>
+                        <th>Recommended Height</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="type">50</td>
+                        <td>50"</td>
+                        <td>127 cm</td>
+                        <td>4'10" – 5'0"</td>
+                    </tr>
+                    <tr>
+                        <td class="type">52</td>
+                        <td>52"</td>
+                        <td>132 cm</td>
+                        <td>5'1" – 5'2"</td>
+                    </tr>
+                    <tr>
+                        <td class="type">54</td>
+                        <td>54"</td>
+                        <td>137 cm</td>
+                        <td>5'3" – 5'4"</td>
+                    </tr>
+                    <tr>
+                        <td class="type">56</td>
+                        <td>56"</td>
+                        <td>142 cm</td>
+                        <td>5'5" – 5'6"</td>
+                    </tr>
+                    <tr>
+                        <td class="type">58</td>
+                        <td>58"</td>
+                        <td>147 cm</td>
+                        <td>5'7" – 5'8"</td>
+                    </tr>
+                    <tr>
+                        <td class="type">60</td>
+                        <td>60"</td>
+                        <td>152 cm</td>
+                        <td>5'9" – 6'0"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand (Left Side) -->
+            <div class="footer-brand">
+                <h2>Hijab Bloom</h2>
+                <p>Elegance in Modesty – Discover timeless hijabs and accessories for every occasion.</p>
+            </div>
+
+            <!-- Right Side Sections -->
+            <div class="footer-links">
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="hijabs.html">Shop Hijabs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Collections -->
+                <div class="footer-section">
+                    <h3>Collections</h3>
+                    <ul>
+                        <li><a href="abayas.html">Abayas</a></li>
+                        <li><a href="hijabs.html"> Hijabs</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="chadar.html">Chadar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                        <li><a href="sizechart.html">Size Guide</a></li>
+                        <li><a href="private policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3>Join Our Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hijabbloomby_laiba?igsh=MW85MzFvbm1jbDAwZg==" target="_blank">
+                          <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hijab Bloom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        // sidebar js chatgpt
+
+        jQuery('.btn1').click(function () {
+            jQuery(this).toggleClass("click");
+            jQuery('.sidebar').toggleClass("show");
+        });
+
+        jQuery('.aba-btn').click(function () {
+            jQuery('nav ul .aba-show').toggleClass("show");
+            jQuery('nav ul .first').toggleClass("rotate");
+        });
+
+        jQuery('.hij-btn').click(function () {
+            jQuery('nav ul .hij-show').toggleClass("show1");
+            jQuery('nav ul .second').toggleClass("rotate");
+        });
+
+        jQuery('.nam-btn').click(function () {
+            jQuery('nav ul .nam-show').toggleClass("show2");
+            jQuery('nav ul .third').toggleClass("rotate");
+        });
+
+        jQuery('.cna-btn').click(function () {
+            jQuery('nav ul .cna-show').toggleClass("show3");
+            jQuery('nav ul .forth').toggleClass("rotate");
+        });
+
+        jQuery('.acc-btn').click(function () {
+            jQuery('nav ul .acc-show').toggleClass("show4");
+            jQuery('nav ul .fifth').toggleClass("rotate");
+        });
+
+        jQuery('nav ul li').click(function () {
+            jQuery(this).addClass("active").siblings().removeClass("active");
+        });
+
+
+        // size chart js
+        function showGuide(type) {
+            document.querySelectorAll('.guide').forEach(g => g.style.display = 'none');
+            document.getElementById(type).style.display = 'block';
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.tab[onclick="showGuide('${type}')"]`).classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
